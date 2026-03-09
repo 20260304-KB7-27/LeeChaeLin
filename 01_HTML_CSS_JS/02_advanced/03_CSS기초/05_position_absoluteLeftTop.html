@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+      }
+      /* 
+      nth-child: 가상 클래스 선택자
+      - 특정 순서의 자식 요소를 선택 
+      */
+      .box:nth-child(1) {
+        background-color: red;
+        top: 0;
+        left: 0;
+      }
+      .box:nth-child(2) {
+        background-color: green;
+        top: 50px;
+        left: 50px;
+      }
+      .box:nth-child(3) {
+        background-color: blue;
+        top: 90px;
+        left: 90px;
+      }
+    </style>
+  </head>
+  <!--
+  absolute의 경우
+  부모 요소들 중에 position이 지정이 되어있을 경우 해당 부모를 기준으로 top, right, bottom, left 속성을 사용ㅎ여 위치를 지정
+  -->
+  <body>
+    <div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
