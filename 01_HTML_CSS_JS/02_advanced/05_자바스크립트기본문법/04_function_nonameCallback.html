@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      let printFn = function (callback, loopNum) {
+        for (let i = 0; i < loopNum; i++) {
+          callBackFn();
+        }
+      };
+      let callBackFn = function () {
+        alert('함수 호출');
+      };
+
+      printFn(callBackFn, 3);
+    </script>
+  </head>
+
+  <body></body>
+</html>
