@@ -9,7 +9,7 @@
 
 <script setup>
 import InputTodo from './components/InputTodo.vue';
-import { computed, ref, provide } from 'vue';
+import { ref, provide } from 'vue';
 import TodoList from './components/TodoList.vue';
 
 const todolist = ref([]);
